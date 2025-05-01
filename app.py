@@ -12,8 +12,19 @@ components.html(
             text-align: center;
             font-family: Arial, sans-serif;
             margin-top: 100px;
-            color: white; /* <- Adicionado */
-            background-color: black; /* Opcional: ajuda a visualizar o texto branco */
+            color: white;
+            background-image: url('https://i.imgur.com/4NJlVnW.jpg'); /* Imagem de fundo com corações */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
         }
         .question {
             font-size: 40px;
@@ -39,6 +50,7 @@ components.html(
     </style>
     </head>
     <body>
+        <div class="overlay"></div>
         <div class="question">💖 Quer ser minha pra sempre? 💖</div>
         <button class="btn yes" onclick="showFireworks()">Sim</button>
         <button id="noBtn" class="btn no" style="top: 60%; left: 60%;">Não</button>
