@@ -37,7 +37,7 @@ components.html(
     </style>
     </head>
     <body>
-        <div class="question">💖 Quer ser minha pra sempre? 💖</div>
+        <div class="question">💖 Vai para o rodizio no Suysei pra mim? 💖</div>
         <button class="btn yes" onclick="showFireworks()">Sim</button>
         <button id="noBtn" class="btn no" style="top: 60%; left: 60%;">Não</button>
 
