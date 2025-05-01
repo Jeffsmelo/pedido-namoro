@@ -12,6 +12,8 @@ components.html(
             text-align: center;
             font-family: Arial, sans-serif;
             margin-top: 100px;
+            color: white; /* <- Adicionado */
+            background-color: black; /* Opcional: ajuda a visualizar o texto branco */
         }
         .question {
             font-size: 40px;
@@ -63,7 +65,7 @@ components.html(
             });
 
             function showFireworks() {
-                document.body.innerHTML = '<h1 style="margin-top: 200px; font-size: 60px;">🎆 EBAAA! Eu te amo! ❤️</h1>';
+                document.body.innerHTML = '<h1 style="margin-top: 200px; font-size: 60px; color: white;">🎆 EBAAA! Eu te amo! ❤️</h1>';
                 setInterval(() => {
                     confetti({
                         particleCount: 150,
